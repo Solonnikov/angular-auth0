@@ -1,0 +1,45 @@
+<!--<div class="row">
+    <div class="col-md-2">
+<img class="img-circle" style="width:100%" src="{{profile.picture}}">
+    </div>
+    <div class="col-md-10">
+        <h1>{{profile.nickname}}'s profile</h1>
+        <p>Email: {{profile.name}}</p>
+        <p>Job-title: {{profile.headline}}</p>
+        <p>Last Update: {{profile.created_at}}</p>
+    </div>
+</div>-->
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h2 class="panel-title">{{profile.given_name}} {{profile.family_name}}</h2>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-2">
+                <img class="thumbnail" style="width:100%" src="{{profile.picture}}">
+            </div>
+            <div class="col-md-10">
+                <div class="stats">
+                <!--<span class="label label-default">{{user.public_repos}} Public Repos</span>
+                <span class="label label-primary">{{user.public_gists}} Public Gists</span>
+                <span class="label label-success">{{user.followers}} Followers</span>
+                <span class="label label-info">{{user.following}} Following</span>
+                </div>
+                <br>-->
+                <ul class="list-group">
+                    <li class="list-group-item"><strong>First Name: </strong>{{profile.given_name}}</li>
+                    <li class="list-group-item"><strong>Last Name: </strong>{{profile.family_name}}</li> 
+                    <li class="list-group-item"><strong>Nickname: </strong>{{profile.nickname}}</li> 
+                    <li class="list-group-item"><strong>Email: </strong>{{profile.email}}</li>
+                    <li class="list-group-item"><strong>Position: </strong>{{profile.headline}}</li>
+                    <li class="list-group-item"><strong>Location: </strong>{{profile.location.name}}</li>
+                    <li class="list-group-item"><strong>Member since: </strong>{{profile.created_at}}</li> 
+                    <li class="list-group-item"><strong>Last update: </strong>{{profile.updated_at}}</li> 
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    
